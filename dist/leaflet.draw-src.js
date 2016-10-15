@@ -371,6 +371,7 @@ L.Draw.Polyline = L.Draw.Feature.extend({
 
 		if (this._poly.getLatLngs().length === 2) {
 			this._map.addLayer(this._poly);
+			this._finishShape();
 		}
 
 		this._vertexChanged(latlng, true);
